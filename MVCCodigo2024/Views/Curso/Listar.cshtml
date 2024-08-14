@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+@model List<MVCCodigo2024.Models.Curso>
+<h2>Listar</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Creditos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var curso in Model)
+        {
+            <tr>
+                <td>
+                <td>@curso.Id</td>
+                <td>@curso.Nombre</td>
+                <td>@curso.Creditos</td>
+            </tr>
+        }
+    </tbody>
+</table>

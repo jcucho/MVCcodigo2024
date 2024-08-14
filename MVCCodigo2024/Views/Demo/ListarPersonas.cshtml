@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "ListarPersonas";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Personas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h2>@Session["mensaje"]</h2>
+    <h2>@ViewBag.Mensaje</h2>
+    <h1>Lista de 20 Personas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Correo Electrónico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Juan Pérez</td><td>28</td><td>juan.perez@example.com</td></tr>
+            <tr><td>2</td><td>María López</td><td>34</td><td>maria.lopez@example.com</td></tr>
+            <tr><td>3</td><td>Carlos García</td><td>23</td><td>carlos.garcia@example.com</td></tr>
+            <tr><td>4</td><td>Laura Martínez</td><td>45</td><td>laura.martinez@example.com</td></tr>
+            <tr><td>5</td><td>Andrés Gómez</td><td>37</td><td>andres.gomez@example.com</td></tr>
+            <tr><td>6</td><td>Ana Fernández</td><td>29</td><td>ana.fernandez@example.com</td></tr>
+            <tr><td>7</td><td>Pedro Rodríguez</td><td>32</td><td>pedro.rodriguez@example.com</td></tr>
+            <tr><td>8</td><td>Elena Sánchez</td><td>41</td><td>elena.sanchez@example.com</td></tr>
+            <tr><td>9</td><td>Jorge Díaz</td><td>26</td><td>jorge.diaz@example.com</td></tr>
+            <tr><td>10</td><td>Patricia Moreno</td><td>38</td><td>patricia.moreno@example.com</td></tr>
+            <tr><td>11</td><td>David Ramírez</td><td>31</td><td>david.ramirez@example.com</td></tr>
+            <tr><td>12</td><td>Camila Castro</td><td>27</td><td>camila.castro@example.com</td></tr>
+            <tr><td>13</td><td>Héctor Ruiz</td><td>35</td><td>hector.ruiz@example.com</td></tr>
+            <tr><td>14</td><td>Isabel Vargas</td><td>30</td><td>isabel.vargas@example.com</td></tr>
+            <tr><td>15</td><td>Ricardo Ortega</td><td>40</td><td>ricardo.ortega@example.com</td></tr>
+            <tr><td>16</td><td>Mariana Morales</td><td>22</td><td>mariana.morales@example.com</td></tr>
+            <tr><td>17</td><td>Oscar Molina</td><td>33</td><td>oscar.molina@example.com</td></tr>
+            <tr><td>18</td><td>Fernanda Gómez</td><td>24</td><td>fernanda.gomez@example.com</td></tr>
+            <tr><td>19</td><td>Julio Moreno</td><td>44</td><td>julio.moreno@example.com</td></tr>
+            <tr><td>20</td><td>Valeria Castro</td><td>26</td><td>valeria.castro@example.com</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

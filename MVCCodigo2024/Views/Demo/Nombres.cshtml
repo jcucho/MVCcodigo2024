@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Nombres";
+    var personas = new List<string> { "Juan", "Daniel", "Hugo" };
+    var cont = 0;
+}
+
+<h2>Nombres</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@{
+                for (int i = 0; i < 10; i++)
+                {
+                    <tr>
+                        <td>1</td>
+                        <td>Manzana</td>
+                        <td>25</td>
+                        <td>10</td>
+                    </tr>
+                }
+            }*@
+        @foreach (var item in personas)
+        {
+            cont = cont + 1;
+            <tr>
+                <td>@cont</td>
+                <td>@item</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
