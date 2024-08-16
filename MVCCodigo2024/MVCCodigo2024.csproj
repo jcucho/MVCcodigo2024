@@ -125,6 +125,7 @@
     <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonasController.cs" />
     <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\ProductosClientesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -132,6 +133,7 @@
     </Compile>
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Curso.cs" />
+    <Compile Include="Models\Persona.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\ProductoCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -205,6 +207,11 @@
     <Content Include="Views\Clientes2\Create.cshtml" />
     <Content Include="Views\Clientes2\Edit.cshtml" />
     <Content Include="Views\Clientes2\Delete.cshtml" />
+    <Content Include="Views\Personas\Index.cshtml" />
+    <Content Include="Views\Personas\Create.cshtml" />
+    <Content Include="Views\Personas\Delete.cshtml" />
+    <Content Include="Views\Personas\Edit.cshtml" />
+    <Content Include="Views\Personas\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
