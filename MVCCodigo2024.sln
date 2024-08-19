@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCodigo2024", "MVCCodigo2024\MVCCodigo2024.csproj", "{71D244DA-727D-4E53-BD43-44B69D0591DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCEFCCodigo2024", "MVCEFCCodigo2024\MVCEFCCodigo2024.csproj", "{35785841-3C78-4519-9153-A2887EED20E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{71D244DA-727D-4E53-BD43-44B69D0591DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71D244DA-727D-4E53-BD43-44B69D0591DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71D244DA-727D-4E53-BD43-44B69D0591DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35785841-3C78-4519-9153-A2887EED20E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35785841-3C78-4519-9153-A2887EED20E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35785841-3C78-4519-9153-A2887EED20E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35785841-3C78-4519-9153-A2887EED20E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

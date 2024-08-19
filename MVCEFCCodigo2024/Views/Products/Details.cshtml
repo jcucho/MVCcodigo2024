@@ -1,0 +1,18 @@
+﻿@model MVCEFCCodigo2024.Models.Products
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Products</h4>
+    <hr />
+    @Html.Partial("_ProductInfo", Model)
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+@Html.Partial("_Welcome")
