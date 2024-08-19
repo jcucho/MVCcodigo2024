@@ -46,13 +46,16 @@ namespace MVCCodigo2024.Controllers
         {
             try
             {
-                var personas = ((List<Persona>)Session["Personas"]);
-                int maxId = personas.Max(p => p.Id);
-                persona.Id = maxId + 1;
-                ((List<Persona>)Session["Personas"]).Add(persona);
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    var personas = ((List<Persona>)Session["Personas"]);
+                    int maxId = personas.Max(p => p.Id);
+                    persona.Id = maxId + 1;
+                    ((List<Persona>)Session["Personas"]).Add(persona);
+                    // TODO: Add insert logic here
+                    return RedirectToAction("Index");
+                }
+                return View(persona);
             }
             catch
             {
